@@ -24,4 +24,4 @@ In the tab **Deployment*  you can change the root-URL by changing the field next
 - Tomcat  : 9.0.37
 - OpenJDK : 14.0.1
 - IntelliJ: 2020.1
-- Spring: : 5.2.3
+- Spring: 5.2.3
