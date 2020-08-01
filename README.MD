@@ -21,7 +21,12 @@ Additional settings can be found in the *Run/Debug Configurations* menu.
 In the tab **Deployment*  you can change the root-URL by changing the field next to *Application context*.
 
 # Project settings
-- Tomcat  : 9.0.37
-- OpenJDK : 14.0.1
+- Tomcat: 9.0.37
+- OpenJDK: 14.0.1
 - IntelliJ: 2020.1
 - Spring: 5.2.3
+ 
+# Course description
+https://www.udemy.com/course/spring-hibernate-tutorial/
+Section 12
+Lesson 106
