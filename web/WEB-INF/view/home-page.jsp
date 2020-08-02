@@ -6,7 +6,9 @@
 </head>
 <body>
 <h2>Hello from the home page!</h2>
-<br>
+<hr>
+<img src="${pageContext.request.contextPath}/resources/spring_logo.svg" alt="Spring logo">
+<hr>
 <a href="showForm">Click here for the form</a>
 </body>
 </html>
