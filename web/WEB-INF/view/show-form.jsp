@@ -18,7 +18,7 @@
 
 <form action="processFormV2" method="GET">
     <p>
-        <label for="studentNameV2">What is your name?</label>
+        <label for="studentNameV2">Want you name in a special way?</label>
         <br>
         <input type="text" name="studentName" id="studentNameV2" placeholder="Enter your name"/>
         <input type="submit"/>
