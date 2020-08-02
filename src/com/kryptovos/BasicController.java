@@ -3,6 +3,8 @@ package com.kryptovos;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
@@ -24,7 +26,7 @@ public class BasicController {
     }
 
     @RequestMapping("/processFormV2")
-    public String letsShoutDude(HttpServletRequest request, Model model){
+    public String letsShoutDude(HttpServletRequest request, Model model) {
 
         // Read the request paramater from the HTML form
         String theName = request.getParameter("studentName");
@@ -40,4 +42,20 @@ public class BasicController {
 
         return "shout-page";
     }
+
+    @RequestMapping("/processFormV3")
+    public String letsShoutAgainDude(@RequestParam("studentName") String theName, Model model) {
+
+        // Convert the data to all caps
+        theName = theName.toUpperCase();
+
+        // Create result
+        String result = "Yo! WADDUP AGAIN " + theName;
+
+        // Add message to the model
+        model.addAttribute("message", result);
+
+        return "shout-again-page";
+    }
+
 }
